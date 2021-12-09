@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Serafim Multimarcas-Página Inicial</title>
+</head>
+<body style="min-width: 327px;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="./Página Inicial.html"><strong>Início</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="endereco.html">Endereço</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="login.html">Entrar</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn-outline-dark btn-warning" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<br>
+      <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>Área Administrativa</h1>
+<br><br>
+                <p>Bem Vindo(a) a Área Administrativa. Aqui você pode cadastrar novos veículos no site, excluir carros vendidos ou indisponíveis e
+                  editar o carrocel localizado na Página Inicial.
+                </p>
+<br><br><br>
+                <!-- Button trigger modal -->
+<div class="d-grid gap-2 col-6 mx-auto">
+  <h3 class="text-center">Funções Administrativas</h3>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Cadastrar Veículo
+  </button>
+  <button class="btn btn-primary " type="button" onclick="window.location.
+  href='./excluiranuncios.html'">Excluir Anúncio</button>
+  <button class="btn btn-primary" type="button" onclick="window.location.
+  href='./editarcarrossel.html'">Fotos Carrocel</button>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cadastrar Veículo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nome do Veículo</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Opcionias</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-10">
+              <label for="inputAddress" class="form-label">Descrição</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Cor</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Kilometragem</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="000.000">
+            </div>
+            <div class="col-md-4">
+              <label for="inputEmail4" class="form-label">Final Placa</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="XXX-XXX0" value="XXX-XXX">
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Ano</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label">Marca</label>
+              <select id="inputState" class="form-select">
+                <option selected>Selecionar...</option>
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Chevrolet</option>
+                <option>Citroen</option>
+                <option>Ford</option>
+                <option>Honda</option>
+                <option>Hyundai</option>
+                <option>Mercedes-benz</option>
+                <option>Mitsubish</option>
+                <option>Nissan</option>
+                <option>Peugeot</option>
+                <option>Toyota</option>
+                <option>Renault</option>
+                <option>Volkswagens</option>
+                <option>Kia</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label">Combustível</label>
+              <select id="inputState" class="form-select">
+                <option selected>Selecionar...</option>
+                <option>Gasolina</option>
+                <option>Diesel</option>
+                <option>Álcool</option>
+                <option>GNV</option>
+              </select>
+              </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label">Carroceria</label>
+              <select id="inputState" class="form-select">
+                <option selected>Selecionar...</option>
+                <option>SUV</option>
+                <option>Sedã</option>
+                <option>Hatch</option>
+                <option>Coupé</option>
+                <option>Minivan</option>
+                <option>Perua</option>
+                <option>Jipe</option>
+                <option>Picape</option>
+                <option>Conversível</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="inputZip" class="form-label">Valor</label>
+              <input type="text" class="form-control" id="inputZip" value="R$ ,00">
+            </div>
+            <div class="col-12">
+              
+          </form>
+            <label for="formFileSm" class="form-label">Escolher Fotos</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+        </div>
+      </main>
+
+<div style="height: 128px;" class="d-block d-md-none"></div>
+<div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
+<div style="height: 129px;" class="d-none d-lg-block"></div>
+
+<footer class="border-top fixed-bottom text-muted bg-light d-none d-md-block">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 col-md-4 text-center text-md-left">
+          &copy; 2021 - Serafim Multimarcas <br>
+          Rua Boehmerwaldt, 339, Joinville/SC <br>
+          CNPJ 32.712.151/1000-69
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="privacidade.html" class="text-decoration-none text-dark">Política de Privacidade
+          </a><br>
+          <a href="termos.html" class="text-decoration-none text-dark">Termos de Uso
+          </a><br>
+          <a href="quemsomos.html" class="text-decoration-none text-dark"> Quem Somos?
+          </a><br>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-right">
+          <a href="Contato.html" class="text-decoration-none text-dark">Contato pelo Site
+          </a><br>
+          Email: <a href="mailto:serafimultimarcas@gmal.com">serafimultimarcas@gmail.com
+          </a><br>
+          Telefone: <a href="phone:47996821445" class="text-decoration-none text-dark">(47) 99682-1445</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--Rodapé Tela Mobile-->
+<footer class="border-top fixed-bottom text-muted bg-light d-md-none">
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-4 text-center text-left">
+        &copy; 2021 - Serafim Multimarcas <br>
+      </div>
+      <div class="col-4 text-center">
+        <a href="privacidade.html" class="text-decoration-none text-dark">Política de Privacidade
+        </a><br>
+        <a href="termos.html" class="text-decoration-none text-dark">Termos de Uso
+        </a><br>
+        <a href="quemsomos.html" class="text-decoration-none text-dark"> Quem Somos?
+        </a><br>
+      </div>
+      <div class="col-4 col-md-4 text-center text-md-right">
+        Email: <a href="mailto:serafimultimarcas@gmal.com">serafimultimarcas@gmail.com
+        </a><br>
+        Telefone: <a href="phone:47999630474" class="text-decoration-none text-dark">(47) 99963-0474</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="bootstrap.min.js"></script>
+</body>
